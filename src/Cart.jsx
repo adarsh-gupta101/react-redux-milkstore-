@@ -1,6 +1,6 @@
 import React from 'react'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 
 import RemoveCircleOutlineOutlinedIcon from '@material-ui/icons/RemoveCircleOutlineOutlined';
 function Cart({imgg,item,itemCount,price,add,remove,offer}) {
@@ -8,7 +8,7 @@ function Cart({imgg,item,itemCount,price,add,remove,offer}) {
 
     return (
         <div class="p-4 md:p-8 bg-white m-12 shadow-lg flex flex-wrap items-center	justify-around	 text-center">
-<img src={imgg} class="w-36"/>
+<img src={imgg} class="w-36" alt="netifyyyy things"/>
 <p class="font-bold text-lg m-16 mr-16">{item}</p>
 <div class="flex items-center">
 <RemoveCircleOutlineOutlinedIcon onClick={()=>{dispatch(remove())}}/>

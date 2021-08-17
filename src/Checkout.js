@@ -48,9 +48,9 @@ export const Checkout = () => {
     const MilkCount = useSelector(((state) => state.Milk.value))
 
 
-    const dispatch = useDispatch();
+
     const butter=butterCount%2===0?butterCount+butterCount/2:butterCount
-    const butterp=butterCount
+
 
     return (
 

@@ -5,7 +5,7 @@ function Item({funct,image,text ,add ,remove,title,price}) {
 
         <div class="shadow-2xl hover:shadow-inner	 p-2 h-72 m-10 text-center  content-between bg-white rounded-2xl">
 <div>
-      <img src={image} class="w-64 h-32 m-auto"/>
+      <img src={image} class="w-64 h-32 m-auto" alt="net"/>
       </div>
       <div class="mt-8 ">
 
