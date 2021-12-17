@@ -1,33 +1,19 @@
 import React from "react";
 
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
-import {Checkout} from "./Checkout.js"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import Banner from "./components/banner";
+import Header from "./components/header";
+import Searchbar from "./components/searchbar";
+
+
 function App() {
   return (
-    <div class="bg-purple-100">
-<Router>
-    <Switch>
-         <Route path="/home">
-
-         </Route>
-         <Route path="/checkout">
-        <Checkout/>
-         </Route>
-         <Route path="*">
-          <Counter />
-         </Route>
-       </Switch>
-
-   </Router>
+    <div className="">
 
 
-
+<Header/>
+<Banner/>
+<Searchbar/>
     </div>
   );
 }
